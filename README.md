@@ -20,3 +20,7 @@ private void KeyPress(object sender, KeyPressEventArgs e)
 }
         
 ```
+
+## Installing via the NuGet Package Command ##
+
+    Install-Package BasicControlsValidation -Version 2.0.0

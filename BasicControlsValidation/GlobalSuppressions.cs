@@ -1,0 +1,17 @@
+﻿
+// This file is used by Code Analysis to maintain SuppressMessage 
+// attributes that are applied to this project.
+// Project-level suppressions either have no target or are given 
+// a specific target and scoped to a namespace, type, member, etc.
+
+[assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Simplification", "RCS1179:Use return instead of assignment.", Justification = "<Pending>", Scope = "member", Target = "~M:BasicControlsValidation.Validation.IsValidTextBoxWithError(System.Windows.Forms.TextBox)~System.Boolean")]
+[assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Simplification", "RCS1179:Use return instead of assignment.", Justification = "<Pending>", Scope = "member", Target = "~M:BasicControlsValidation.Validation.IsValidMaskedTextBoxWithError(System.Windows.Forms.MaskedTextBox)~System.Boolean")]
+[assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Design", "RCS1169:Make field read-only.", Justification = "<Pending>", Scope = "member", Target = "~F:BasicControlsValidation.Validation.errorProvider")]
+[assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Usage", "RCS1202:Avoid NullReferenceException.", Justification = "<Pending>", Scope = "member", Target = "~M:BasicControlsValidation.Validation.AreValidControls(System.Windows.Forms.Control[])~System.Boolean")]
+[assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Usage", "RCS1202:Avoid NullReferenceException.", Justification = "<Pending>", Scope = "member", Target = "~M:BasicControlsValidation.Validation.AreValidControlsWithError(System.Windows.Forms.Control[])~System.Boolean")]
+[assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Simplification", "RCS1179:Use return instead of assignment.", Justification = "<Pending>", Scope = "member", Target = "~M:BasicControlsValidation.Validation.IsValidComboBox(System.Windows.Forms.ComboBox)~System.Boolean")]
+[assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Simplification", "RCS1179:Use return instead of assignment.", Justification = "<Pending>", Scope = "member", Target = "~M:BasicControlsValidation.Validation.IsValidComboBoxWithError(System.Windows.Forms.ComboBox)~System.Boolean")]
+[assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Simplification", "RCS1179:Use return instead of assignment.", Justification = "<Pending>", Scope = "member", Target = "~M:BasicControlsValidation.Validation.IsValidMaskedTextBox(System.Windows.Forms.MaskedTextBox)~System.Boolean")]
+[assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Simplification", "RCS1179:Use return instead of assignment.", Justification = "<Pending>", Scope = "member", Target = "~M:BasicControlsValidation.Validation.IsValidTextBox(System.Windows.Forms.TextBox)~System.Boolean")]
+[assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Readability", "RCS1123:Add parentheses according to operator precedence.", Justification = "<Pending>", Scope = "member", Target = "~M:BasicControlsValidation.Validation.MakeNumeric(System.Windows.Forms.TextBox,System.Char)~System.Boolean")]
+[assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Simplification", "RCS1104:Simplify conditional expression.", Justification = "<Pending>", Scope = "member", Target = "~M:BasicControlsValidation.Validation.MakeNumeric(System.Windows.Forms.TextBox,System.Char)~System.Boolean")]

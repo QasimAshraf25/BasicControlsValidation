@@ -8,7 +8,7 @@ using static BasicControlValidation.Validation;
 
 private void Click(object sender, EventArgs e)
 {
-   if (AreValidControlsWithError(this))
+   if (AreValidTextBoxesWithError(tb1,tb2,...,tbn))
    {
         // Code Block
    }

@@ -1,4 +1,4 @@
-﻿using System.Windows.Forms;
+using System.Windows.Forms;
 
 namespace BasicControlsValidation
 {
@@ -29,7 +29,7 @@ namespace BasicControlsValidation
             bool result = false;
             foreach (TextBox con in TextBoxList)
             {
-                if (string.IsNullOrEmpty(con.Text))
+                if (string.IsNullOrWhiteSpace(con.Text))
                 {
                     con.Focus();
                     result = false;
@@ -74,10 +74,10 @@ namespace BasicControlsValidation
             errorProvider.Clear();
             foreach (TextBox text in TextBoxList)
             {
-                if (string.IsNullOrEmpty(text.Text))
+                if (string.IsNullOrWhiteSpace(text.Text))
                 {
                     text.Focus();
-                    if (!string.IsNullOrEmpty(ErrorMessage))
+                    if (!string.IsNullOrWhiteSpace(ErrorMessage))
                     {
                         errorProvider.SetError(text as TextBox, ErrorMessage);
                     }
@@ -106,7 +106,7 @@ namespace BasicControlsValidation
         public static bool IsValidTextBox(TextBox TextBox)
         {
             bool result;
-            if (string.IsNullOrEmpty(TextBox.Text))
+            if (string.IsNullOrWhiteSpace(TextBox.Text))
             {
                 TextBox.Focus();
                 result = false;
@@ -129,7 +129,7 @@ namespace BasicControlsValidation
         {
             bool result = false;
             errorProvider.Clear();
-            if (string.IsNullOrEmpty(TextBox.Text))
+            if (string.IsNullOrWhiteSpace(TextBox.Text))
             {
                 TextBox.Focus();
                 errorProvider.SetError(TextBox, "Required Field Can't Be Empty");
@@ -222,7 +222,7 @@ namespace BasicControlsValidation
                 if (combo.SelectedIndex == -1)
                 {
                     combo.Focus();
-                    if (!string.IsNullOrEmpty(ErrorMessage))
+                    if (!string.IsNullOrWhiteSpace(ErrorMessage))
                     {
                         errorProvider.SetError(combo as ComboBox, ErrorMessage);
                     }
@@ -347,7 +347,7 @@ namespace BasicControlsValidation
                 if (!masked.MaskCompleted)
                 {
                     masked.Focus();
-                    if (!string.IsNullOrEmpty(ErrorMessage))
+                    if (!string.IsNullOrWhiteSpace(ErrorMessage))
                     {
                         errorProvider.SetError(masked as MaskedTextBox, ErrorMessage);
                     }
@@ -449,9 +449,9 @@ namespace BasicControlsValidation
         public static bool AreValidControls(params Control[] ControlList)
         {
             bool result = false;
-            foreach (Control con in ControlList)
+            foreach (Control con in ControlList[0].Controls)
             {
-                if ((con is TextBox) && string.IsNullOrEmpty((con as TextBox).Text))
+                if ((con is TextBox) && string.IsNullOrWhiteSpace((con as TextBox).Text))
                 {
                     (con as TextBox).Focus();
                     result = false;
@@ -482,9 +482,9 @@ namespace BasicControlsValidation
         {
             bool result = false;
             errorProvider.Clear();
-            foreach (Control con in ControlList)
+            foreach (Control con in ControlList[0].Controls)
             {
-                if ((con is TextBox) && string.IsNullOrEmpty((con as TextBox).Text))
+                if ((con is TextBox) && string.IsNullOrWhiteSpace((con as TextBox).Text))
                 {
                     (con as TextBox).Focus();
                     errorProvider.SetError(con as TextBox, "Required Field Can't Be Empty");
